@@ -9,13 +9,36 @@
 #import "UIDickBar.h"
 
 
+@interface UIDickBar () {
+    id<UIDickBarDelegate> delegate_;
+    id<UIDickBarDataSource> dataSource_;
+    NSUInteger currentDickIndex_;
+    NSString *currentDickTitle_;
+    NSURL *currentDickURL_;
+}
+
+@property (nonatomic, assign) id<UIDickBarDelegate> delegate;
+@property (nonatomic, assign) id<UIDickBarDataSource> dataSource; 
+@property (nonatomic, assign) NSUInteger currentDickIndex;
+@property (nonatomic, copy) NSString *currentDickTitle;
+@property (nonatomic, copy) NSURL *currentDickURL;
+@end
+
+
 @implementation UIDickBar
 
-- (id)initWithFrame:(CGRect)frame
+@synthesize delegate = delegate_;
+@synthesize dataSource = dataSource_;
+@synthesize currentDickIndex = currentDickIndex_;
+@synthesize currentDickTitle = currentDickTitle_;
+@synthesize currentDickURL = currentDickURL_;
+
+- (id)initWithDelegate:(id<UIDickBarDelegate>)delegate dataSource:(id<UIDickBarDataSource>)dataSource
 {
-    self = [super initWithFrame:frame];
+    self = [super initWithFrame:CGRectZero];
     if (self) {
-        // Initialization code
+        delegate_ = delegate;
+        dataSource_ = dataSource;
     }
     return self;
 }
@@ -29,8 +52,17 @@
 }
 */
 
+- (void)showInView:(UIView *)view
+{
+}
+
 - (void)dealloc
 {
+    delegate_ = nil;
+    dataSource_ = nil;
+    [currentDickTitle_ release];
+    [currentDickURL_ release];
+    
     [super dealloc];
 }
 
