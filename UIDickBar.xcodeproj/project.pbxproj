@@ -12,10 +12,11 @@
 		7709ADEB13243258000FD1E4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7709ADEA13243258000FD1E4 /* CoreGraphics.framework */; };
 		7709ADF113243258000FD1E4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7709ADEF13243258000FD1E4 /* InfoPlist.strings */; };
 		7709ADF413243258000FD1E4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7709ADF313243258000FD1E4 /* main.m */; };
-		7709ADF713243258000FD1E4 /* UIDickBarAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7709ADF613243258000FD1E4 /* UIDickBarAppDelegate.m */; };
+		7709ADF713243258000FD1E4 /* DemoAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7709ADF613243258000FD1E4 /* DemoAppDelegate.m */; };
 		7709ADFA13243258000FD1E4 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7709ADF813243258000FD1E4 /* MainWindow.xib */; };
 		7709ADFD13243258000FD1E4 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7709ADFC13243258000FD1E4 /* RootViewController.m */; };
 		7709AE0013243258000FD1E4 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7709ADFE13243258000FD1E4 /* RootViewController.xib */; };
+		7709AE081324331A000FD1E4 /* UIDickBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 7709AE071324331A000FD1E4 /* UIDickBar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,16 +24,18 @@
 		7709ADE613243258000FD1E4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		7709ADE813243258000FD1E4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7709ADEA13243258000FD1E4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		7709ADEE13243258000FD1E4 /* UIDickBar-Info.plist */ = {isa = PBXFileReference; path = "UIDickBar-Info.plist"; sourceTree = "<group>"; };
+		7709ADEE13243258000FD1E4 /* UIDickBar-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UIDickBar-Info.plist"; sourceTree = "<group>"; };
 		7709ADF013243258000FD1E4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		7709ADF213243258000FD1E4 /* UIDickBar-Prefix.pch */ = {isa = PBXFileReference; path = "UIDickBar-Prefix.pch"; sourceTree = "<group>"; };
+		7709ADF213243258000FD1E4 /* UIDickBar-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIDickBar-Prefix.pch"; sourceTree = "<group>"; };
 		7709ADF313243258000FD1E4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		7709ADF513243258000FD1E4 /* UIDickBarAppDelegate.h */ = {isa = PBXFileReference; path = UIDickBarAppDelegate.h; sourceTree = "<group>"; };
-		7709ADF613243258000FD1E4 /* UIDickBarAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIDickBarAppDelegate.m; sourceTree = "<group>"; };
+		7709ADF513243258000FD1E4 /* DemoAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoAppDelegate.h; sourceTree = "<group>"; };
+		7709ADF613243258000FD1E4 /* DemoAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoAppDelegate.m; sourceTree = "<group>"; };
 		7709ADF913243258000FD1E4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
-		7709ADFB13243258000FD1E4 /* RootViewController.h */ = {isa = PBXFileReference; path = RootViewController.h; sourceTree = "<group>"; };
+		7709ADFB13243258000FD1E4 /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		7709ADFC13243258000FD1E4 /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		7709ADFF13243258000FD1E4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RootViewController.xib; sourceTree = "<group>"; };
+		7709AE061324331A000FD1E4 /* UIDickBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIDickBar.h; sourceTree = "<group>"; };
+		7709AE071324331A000FD1E4 /* UIDickBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIDickBar.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +55,9 @@
 		7709ADD713243258000FD1E4 = {
 			isa = PBXGroup;
 			children = (
-				7709ADEC13243258000FD1E4 /* UIDickBar */,
+				7709AE061324331A000FD1E4 /* UIDickBar.h */,
+				7709AE071324331A000FD1E4 /* UIDickBar.m */,
+				7709ADEC13243258000FD1E4 /* Demo */,
 				7709ADE513243258000FD1E4 /* Frameworks */,
 				7709ADE313243258000FD1E4 /* Products */,
 			);
@@ -76,17 +81,18 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		7709ADEC13243258000FD1E4 /* UIDickBar */ = {
+		7709ADEC13243258000FD1E4 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
-				7709ADF513243258000FD1E4 /* UIDickBarAppDelegate.h */,
-				7709ADF613243258000FD1E4 /* UIDickBarAppDelegate.m */,
+				7709ADF513243258000FD1E4 /* DemoAppDelegate.h */,
+				7709ADF613243258000FD1E4 /* DemoAppDelegate.m */,
 				7709ADF813243258000FD1E4 /* MainWindow.xib */,
 				7709ADFB13243258000FD1E4 /* RootViewController.h */,
 				7709ADFC13243258000FD1E4 /* RootViewController.m */,
 				7709ADFE13243258000FD1E4 /* RootViewController.xib */,
 				7709ADED13243258000FD1E4 /* Supporting Files */,
 			);
+			name = Demo;
 			path = UIDickBar;
 			sourceTree = "<group>";
 		};
@@ -162,8 +168,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				7709ADF413243258000FD1E4 /* main.m in Sources */,
-				7709ADF713243258000FD1E4 /* UIDickBarAppDelegate.m in Sources */,
+				7709ADF713243258000FD1E4 /* DemoAppDelegate.m in Sources */,
 				7709ADFD13243258000FD1E4 /* RootViewController.m in Sources */,
+				7709AE081324331A000FD1E4 /* UIDickBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,5 +1,5 @@
 //
-//  RootViewController.h
+//  UIDickBar.h
 //  UIDickBar
 //
 //  Created by digdog on 3/6/11.
@@ -8,9 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface RootViewController : UITableViewController {
 
+@interface UIDickBar : UIControl {
+    
 }
-
 
 @end
