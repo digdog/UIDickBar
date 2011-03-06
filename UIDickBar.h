@@ -25,10 +25,10 @@
 
 @protocol UIDickBarDelegate <NSObject>
 @optional
-- (void)willPresentDickBar;
-- (void)didPresentDickBar;
-- (void)willDismissDickBar;
-- (void)didDismissDickBar;
+- (void)willPresentDickBar:(UIDickBar *)dickBar;
+- (void)didPresentDickBar:(UIDickBar *)dickBar;
+- (void)willDismissDickBar:(UIDickBar *)dickBar;
+- (void)didDismissDickBar:(UIDickBar *)dickBar;
 - (void)didClickDickBar:(UIDickBar *)dickBar;
 @end
 
