@@ -12,15 +12,19 @@
 @interface UIDickBar () {
     id<UIDickBarDelegate> delegate_;
     id<UIDickBarDataSource> dataSource_;
+    NSUInteger numberOfDicks_;
     NSUInteger currentDickIndex_;
     NSString *currentDickTitle_;
+    NSString *currentDickBadge_;
     NSURL *currentDickURL_;
 }
 
 @property (nonatomic, assign) id<UIDickBarDelegate> delegate;
 @property (nonatomic, assign) id<UIDickBarDataSource> dataSource; 
+@property (nonatomic, assign) NSUInteger numberOfDicks;
 @property (nonatomic, assign) NSUInteger currentDickIndex;
 @property (nonatomic, copy) NSString *currentDickTitle;
+@property (nonatomic, copy) NSString *currentDickBadge;
 @property (nonatomic, copy) NSURL *currentDickURL;
 @end
 
@@ -29,8 +33,10 @@
 
 @synthesize delegate = delegate_;
 @synthesize dataSource = dataSource_;
+@synthesize numberOfDicks = numberOfDicks_;
 @synthesize currentDickIndex = currentDickIndex_;
 @synthesize currentDickTitle = currentDickTitle_;
+@synthesize currentDickBadge = currentDickBadge_;
 @synthesize currentDickURL = currentDickURL_;
 
 - (id)initWithDelegate:(id<UIDickBarDelegate>)delegate dataSource:(id<UIDickBarDataSource>)dataSource
@@ -61,6 +67,7 @@
     delegate_ = nil;
     dataSource_ = nil;
     [currentDickTitle_ release];
+    [currentDickBadge_ release];
     [currentDickURL_ release];
     
     [super dealloc];

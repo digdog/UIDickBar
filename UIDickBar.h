@@ -15,6 +15,7 @@
 }
 @property (nonatomic, assign, readonly) NSUInteger currentDickIndex;
 @property (nonatomic, copy, readonly) NSString *currentDickTitle;
+@property (nonatomic, copy, readonly) NSString *currentDickBadge;
 @property (nonatomic, copy, readonly) NSURL *currentDickURL;
 
 - (id)initWithDelegate:(id<UIDickBarDelegate>)delegate dataSource:(id<UIDickBarDataSource>)dataSource;
@@ -37,5 +38,6 @@
 @required
 - (NSInteger)numberOfDicksInDickBar:(UIDickBar *)dickBar;
 - (NSString *)dickBar:(UIDickBar *)dickBar titleForDickAtIndex:(NSUInteger)dickIndex;
+- (NSString *)dickBar:(UIDickBar *)dickBar badgeForDickAtIndex:(NSUInteger)dickIndex;
 - (NSURL *)dickBar:(UIDickBar *)dickBar URLForDickAtIndex:(NSUInteger)dickIndex;
 @end
