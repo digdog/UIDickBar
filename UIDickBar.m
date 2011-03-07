@@ -169,8 +169,12 @@
 - (void)showInView:(UIView *)view
 {
     if (view) {
-        self.frame = CGRectMake(0.0f, 0.0f, view.frame.size.width, 44.0f);
+        self.frame = CGRectMake(0.0f, 0.0f, view.frame.size.width, 0.0f);
         [view addSubview:self];
+        
+        [UIView beginAnimations:nil context:NULL];
+        self.frame = CGRectMake(0.0f, 0.0f, view.frame.size.width, 44.0f);
+        [UIView commitAnimations];
     }
 }
 
