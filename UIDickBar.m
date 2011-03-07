@@ -169,7 +169,7 @@
 - (void)showInView:(UIView *)view
 {
     if (view) {
-        self.frame = CGRectMake(0.0f, 0.0f, view.frame.size.width, 0.0f);
+        self.frame = CGRectMake(0.0f, -44.0f, view.frame.size.width, 44.0f);
 
         if (self.superview) {
             [self removeFromSuperview];
