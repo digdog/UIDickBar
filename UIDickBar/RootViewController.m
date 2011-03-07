@@ -9,6 +9,7 @@
 #import "RootViewController.h"
 
 @implementation RootViewController
+@synthesize tableView = tableView_;
 
 - (void)viewDidLoad
 {
@@ -23,6 +24,12 @@
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
+    
+    UIDickBar *dickBar = [[UIDickBar alloc] initWithDickTitle:@"#DickBar" dickBadge:@"Stupid" actionBlock:^{
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://digdog.tumblr.com"]];
+    }];
+    [dickBar showInView:self.view];
+    [dickBar release];
 }
 
 - (void)viewWillDisappear:(BOOL)animated
@@ -48,7 +55,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 0;
+    return 30;
 }
 
 // Customize the appearance of table view cells.
@@ -58,8 +65,12 @@
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
-        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
+        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier] autorelease];
     }
+    cell.textLabel.text = @"For God Sake";
+    cell.textLabel.textColor = [UIColor lightGrayColor];
+    cell.detailTextLabel.text = @"Do Not Use This Component In Your App";
+    cell.detailTextLabel.textColor = [UIColor lightGrayColor];
 
     // Configure the cell.
     return cell;
@@ -127,6 +138,7 @@
 
 - (void)viewDidUnload
 {
+    [self setTableView:nil];
     [super viewDidUnload];
 
     // Relinquish ownership of anything that can be recreated in viewDidLoad or on demand.
@@ -135,6 +147,7 @@
 
 - (void)dealloc
 {
+    [tableView_ release];
     [super dealloc];
 }
 
