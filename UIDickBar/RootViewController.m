@@ -67,9 +67,9 @@
     if (cell == nil) {
         cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier] autorelease];
     }
-    cell.textLabel.text = @"For God Sake";
+    cell.textLabel.text = @"For God's Sake";
     cell.textLabel.textColor = [UIColor lightGrayColor];
-    cell.detailTextLabel.text = @"Do Not Use This Component In Your App";
+    cell.detailTextLabel.text = @"Do Not Use This Component In Your iOS Apps";
     cell.detailTextLabel.textColor = [UIColor lightGrayColor];
 
     // Configure the cell.
