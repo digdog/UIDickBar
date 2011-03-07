@@ -16,6 +16,7 @@
 @property (nonatomic, copy) NSString *dickBadge;
 
 - (void)callActionBlock_:(id)sender;
+- (void)orientationChanged_:(NSNotification *)notification;
 @end
 
 
@@ -37,6 +38,10 @@
         actionBlock_ = Block_copy(action);
         
         [self addTarget:self action:@selector(callActionBlock_:) forControlEvents:UIControlEventTouchUpInside];
+        
+        [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(orientationChanged_:)
+                                                     name:UIDeviceOrientationDidChangeNotification object:nil];
     }
     return self;    
 }
@@ -173,8 +178,16 @@
     actionBlock_();
 }
 
+- (void)orientationChanged_:(NSNotification *)notification
+{
+    [self setNeedsDisplay];
+}
+
 - (void)dealloc
 {
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+    [[UIDevice currentDevice] endGeneratingDeviceOrientationNotifications];
+
     [dickTitle_ release];
     [dickBadge_ release];
     
