@@ -6,7 +6,7 @@
 
 ## Requirement ##
 
-1. iOS 4.0 or later (Sample project was by Xcode 4 GM 2)
+1. iOS 4.0 or later (Sample project was created from Xcode 4 GM 2)
 2. Use LLVM Clang 2.0 compiler
 
 ## Usage ##
