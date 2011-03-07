@@ -1,6 +1,6 @@
 ﻿# UIDickBar, An Awful Idea.
 
-[#dickbar][1], Twitter 3.3 for iOS's new awful feature, now available for your iOS app too.
+[#dickbar][1], Twitter 3.3 for iOS's new feature, now available for your iOS app too.
 
 ![](https://github.com/digdog/UIDickBar/raw/master/Screenshots/Landscape.png)
 
@@ -40,4 +40,4 @@ Then you call <code>-showInView:</code> to display <code>UIDickBar</code> that o
 
 UIDickBar is released under MIT License.
     
-[1]: http://twitter.com/#!/search/%23dickbar 
+[1]: http://twitter.com/#search?q=%23dickbar
