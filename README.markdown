@@ -1,6 +1,6 @@
 ﻿# UIDickBar, An Awful Idea.
 
-[#dickbar][1], Twitter 3.3 for iOS's new feature, now available for your iOS app too.
+[#dickbar][1], new feature from Twitter for iPhone, now available for your iOS app too.
 
 ![](https://github.com/digdog/UIDickBar/raw/master/Screenshots/Landscape.png)
 
@@ -25,7 +25,7 @@ Then you call <code>-showInView:</code> to display <code>UIDickBar</code> that o
 ## Features
 
 1. Look like real [#dickbar][1].
-2. No fancy animation.
+2. No fancy animations.
 3. Support rotation.
 4. Support Blocks.
 5. Use UIDickBar to get tons of one star reviews, priceless.
