@@ -170,6 +170,10 @@
 {
     if (view) {
         self.frame = CGRectMake(0.0f, 0.0f, view.frame.size.width, 0.0f);
+
+        if (self.superview) {
+            [self removeFromSuperview];
+        }
         [view addSubview:self];
         
         [UIView beginAnimations:nil context:NULL];
