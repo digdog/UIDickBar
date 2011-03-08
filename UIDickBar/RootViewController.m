@@ -10,6 +10,16 @@
 
 @implementation RootViewController
 
+- (void)loadDickBar {
+	UIDickBar *db = [[UIDickBar alloc] initWithDickTitle:@"#DickBar" 
+											   dickBadge:@"Stupid" 
+											 actionBlock:^{
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://digdog.tumblr.com"]];
+    }];
+	self.dickBar = db;
+	[db release];
+}
+
  // Override to allow orientations other than the default portrait orientation.
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
 	return YES;
