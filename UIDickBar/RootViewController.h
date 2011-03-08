@@ -7,11 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "UIDickBar.h"
+#import "UIDickBarController.h"
 
-@interface RootViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>{
-}
-@property (nonatomic, retain) IBOutlet UITableView *tableView;
-
-
+@interface RootViewController : UIDickBarController {}
 @end
