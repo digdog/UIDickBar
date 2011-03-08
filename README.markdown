@@ -1,4 +1,4 @@
-# UIDickBar, An Awful Idea. #
+﻿# UIDickBar, An Awful Idea. #
 
 [#Dickbar][1], new feature from Twitter for iPhone, now available for your iOS app too.
 
@@ -36,8 +36,18 @@ Then you call <code>-showInView:</code> to display <code>UIDickBar</code> that o
 
 ![](https://github.com/digdog/UIDickBar/raw/master/Screenshots/Portrait.png)
 
+## Credit ##
+
+This project is created by [Ching-Lan 'digdog' Huang][2]. Alone with helps from following people:  
+
+* [Daniel Tull][3]
+
+Thanks!
+
 ## License ##
 
 UIDickBar is released under MIT License.
     
 [1]: http://twitter.com/#search?q=%23dickbar
+[2]: http://digdog.tumblr.com
+[3]: http://danieltull.co.uk/
