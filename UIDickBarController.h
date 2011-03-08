@@ -10,7 +10,7 @@
 #import "UIDickBar.h"
 
 @interface UIDickBarController : UIViewController <UITableViewDelegate, UITableViewDataSource> {
-    BOOL dickBarScrolledOffScreen;
+	BOOL dickBarShowing;
 }
 
 @property (nonatomic, retain) IBOutlet UIDickBar *dickBar;
@@ -18,5 +18,9 @@
 
 - (void)loadTableView;
 - (void)loadDickBar;
+
+- (IBAction)toggleDickBar:(id)sender;
+- (void)hideDickBar;
+- (void)showDickBar;
 
 @end
