@@ -1,8 +1,12 @@
 ﻿# UIDickBar, An Awful Idea. #
 
-[#Dickbar][1], new feature from Twitter for iPhone, now available for your iOS app too.
+[#Dickbar][1], new feature from Twitter for iPhone, now available for your iOS app too. 
 
 ![](https://github.com/digdog/UIDickBar/raw/master/Screenshots/Landscape.png)
+
+## Update ##
+
+I try to analysis the problems underlying the UIDickBar, and conclude in here: [**Problems and the Solution for UIDickBar**](http://digdog.tumblr.com/post/3729884380/problems-and-the-solution-for-uidickbar), read it if you're interested.
 
 ## Requirement ##
 
