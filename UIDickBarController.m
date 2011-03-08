@@ -82,7 +82,7 @@
 		
 	} else {
 		
-		[self.dickBar showInView:nil];
+		[self.dickBar removeFromSuperview];
 	}
 
 	dickBarShowing = NO;
@@ -131,10 +131,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 	[self showDickBar];
-	
-	UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithTitle:@"toggle" style:UIBarButtonItemStyleBordered target:self action:@selector(toggleDickBar:)];
-	self.navigationItem.rightBarButtonItem = item;
-	[item release];
 }
 
 - (void)viewDidUnload {

@@ -10,6 +10,14 @@
 
 @implementation RootViewController
 
+- (void)viewDidLoad {
+	[super viewDidLoad];
+	
+	UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithTitle:@"toggle" style:UIBarButtonItemStyleBordered target:self action:@selector(toggleDickBar:)];
+	self.navigationItem.rightBarButtonItem = item;
+	[item release];
+}
+
 - (void)loadDickBar {
 	UIDickBar *db = [[UIDickBar alloc] initWithDickTitle:@"#DickBar" 
 											   dickBadge:@"Stupid" 
