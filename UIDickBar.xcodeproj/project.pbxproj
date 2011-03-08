@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		241CD29213263BCA00FABBEC /* UIDickBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 241CD29113263BCA00FABBEC /* UIDickBarController.m */; };
 		7709ADE713243258000FD1E4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7709ADE613243258000FD1E4 /* UIKit.framework */; };
 		7709ADE913243258000FD1E4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7709ADE813243258000FD1E4 /* Foundation.framework */; };
 		7709ADEB13243258000FD1E4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7709ADEA13243258000FD1E4 /* CoreGraphics.framework */; };
@@ -22,6 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		241CD29013263BCA00FABBEC /* UIDickBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIDickBarController.h; sourceTree = "<group>"; };
+		241CD29113263BCA00FABBEC /* UIDickBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIDickBarController.m; sourceTree = "<group>"; };
 		7709ADE213243258000FD1E4 /* UIDickBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIDickBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7709ADE613243258000FD1E4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		7709ADE813243258000FD1E4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -61,6 +64,8 @@
 			children = (
 				7709AE061324331A000FD1E4 /* UIDickBar.h */,
 				7709AE071324331A000FD1E4 /* UIDickBar.m */,
+				241CD29013263BCA00FABBEC /* UIDickBarController.h */,
+				241CD29113263BCA00FABBEC /* UIDickBarController.m */,
 				7709AE8B132473A5000FD1E4 /* trends-icon.png */,
 				7709AE8C132473A5000FD1E4 /* trends-icon@2x.png */,
 				7709ADEC13243258000FD1E4 /* Demo */,
@@ -179,6 +184,7 @@
 				7709ADF713243258000FD1E4 /* DemoAppDelegate.m in Sources */,
 				7709ADFD13243258000FD1E4 /* RootViewController.m in Sources */,
 				7709AE081324331A000FD1E4 /* UIDickBar.m in Sources */,
+				241CD29213263BCA00FABBEC /* UIDickBarController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
