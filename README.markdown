@@ -1,6 +1,6 @@
 # UIDickBar, An Awful Idea. #
 
-[#Dickbar][1], new feature from Twitter for iPhone, now available for your iOS app too. 
+[#Dickbar][1], "[Twitter's mainstream consumer client experience][4]", now available for your iOS app too. 
 
 ![](https://github.com/digdog/UIDickBar/raw/master/Screenshots/Landscape.png)
 
@@ -55,3 +55,4 @@ UIDickBar is released under MIT License.
 [1]: http://twitter.com/#search?q=%23dickbar
 [2]: http://digdog.tumblr.com
 [3]: http://danieltull.co.uk/
+[4]: https://groups.google.com/forum/#!topic/twitter-api-announce/yCzVnHqHIWo/discussion
