@@ -1,10 +1,12 @@
 # UIDickBar, An Awful Idea. #
 
-[#Dickbar][1], "[Twitter's mainstream consumer client experience][4]", now available for your iOS app too. (btw, Twitter just said [they will remove][5] UIDickBar)
+[#Dickbar][1], "[Twitter's mainstream consumer client experience][4]", now available for your iOS app too. 
 
 ![](https://github.com/digdog/UIDickBar/raw/master/Screenshots/Landscape.png)
 
 ## Update ##
+
+On March 31, 2011, Twitter [removed][5] the UIDickBar from their iPhone client version 3.3.3.
 
 Problems underlying the UIDickBar are analyzed and concluded here: [**Problems and the Solution for UIDickBar**](http://digdog.tumblr.com/post/3729884380/problems-and-the-solution-for-uidickbar), read it if you're interested.
 
